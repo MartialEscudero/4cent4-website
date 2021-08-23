@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <title>4cent4.fr by Martial Escudero</title>
+    <meta name="robots" content="noindex" />
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins');
+    body {
+      background-color: #0e0e0e;
+      margin: 0;
+      padding: 0;
+    }
+    #app {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-size: 1.8rem;
+    }
+    p {
+      text-align: center;
+      color: white;
+    }
+    .link {
+      font-weight: bold;
+      color: #93C5FD;
+      transition: .5s;
+      text-decoration: none;
+    }
+    .link:hover {
+      transition: .5s;
+      color: black;
+      background: #93C5FD;
+      cursor: pointer;
+    }
+    span {
+      font-weight: bold;
+      color: #93C5FD;
+    }
+    img {
+      width: 500px;
+      margin-bottom: -5rem;
+      margin-top: -10rem;
+    }
+    /* .icon {
+      color: white;
+      padding: 5px;
+      transition: .5s;
+      border-radius: 10px;
+    }
+    .icon:hover {
+      background: #60A5FA;
+      padding: 5px;
+      border-radius: 10px;
+      transition: .5s;
+    } */
+  </style>
+  <body>
+    <div id=app>
+      <p>
+        <img src="/PNG_WHITE.png" /><br><br>
+        Ce site est en cours de contruction 🚧.<br><br>
+        Vous allez être redirigé vers mon site personnel <a class="link" href="https://www.martialescudero.com">martialescudero.com</a> dans <span>{{time}}</span>.<br><br>
+        <!-- <a href="https://www.instagram.com/le4cent4/"><ion-icon class="icon" name="logo-instagram"></ion-icon></a> -->
+      </p>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        time: 8
+      },
+      mounted() {
+        setTimeout(() => {this.time = 7}, 1000)
+        setTimeout(() => {this.time = 6}, 2000)
+        setTimeout(() => {this.time = 5}, 3000)
+        setTimeout(() => {this.time = 4}, 4000)
+        setTimeout(() => {this.time = 3}, 5000)
+        setTimeout(() => {this.time = 2}, 6000)
+        setTimeout(() => {this.time = 1}, 7000)
+        setTimeout(() => {this.time = "ZÉ PARTI 🚀 !"}, 8000)
+        setTimeout(() => {document.location.href='https://www.martialescudero.com'}, 8500)
+      }
+    })
+  </script>
+</html>
